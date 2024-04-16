@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./3 weather api.css">
+</head>
+
+<body>
+
+    <section>
+        <div id="data">
+            <input type="text" placeholder="Enter Region" id="search">
+            <button id="btn" onclick="getApiData()"><i class="fa fa-search" aria-hidden="true"></i></button>
+            <h1 id="title">~Current Weather~</h1>
+
+
+
+            <div id="location">
+                <h3 id="name">Name:</h3>
+                <h3 id="region">Region:</h3>
+                <h3 id="country">Country:</h3>
+                <h3 id="time">Local Data/Time:</h5>
+            </div>
+
+
+
+
+            <div id="tempInfo">
+                <div id="tempLogo"> </div>
+                <h3 id="condition"></h3>
+                <h1 id="temp"></h1>
+            </div>
+
+            
+            <div id="content">
+                <div>
+                    <h3>WIND</h3>
+                    <p id="windData"></p>
+                </div>
+                <div>
+                    <h3>HUMIDITY</h3>
+                    <p id="humidityData"></p>
+                </div>
+                <div>
+                    <h3>VISIBILITY</h3>
+                    <p id="visibilityData"></p>
+                </div>
+                <div>
+                    <h3>PRESSURE</h3>
+                    <p id="pressureData"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./3 weather api.js"></script>
+</body>
+
+</html>

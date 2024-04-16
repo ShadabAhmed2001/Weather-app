@@ -1,0 +1,209 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(8, 8, 17);
+}
+
+
+section {
+    margin: 100px auto;
+    width: 58%;
+    height: 500px;
+    border-radius: 40px;
+    filter: brightness(120%);
+    /* border: 1px solid red; */
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("https://wallpapers.com/images/hd/perfect-weather-with-gradient-sky-ym0nn79vhoqg34v3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 8px 0px white;
+}
+
+#data {
+    height: 80%;
+    width: 80%;
+    /* border: 1px solid red; */
+    border-radius: 20px;
+    background-color: rgba(128, 128, 128, 0.445);
+    box-shadow: 0px 0px 10px 2px rgb(66, 30, 66);
+    position: relative;
+}
+
+#title {
+    position: absolute;
+    top: 15px;
+    left: 150px;
+    font-family: cursive;
+    margin-left: 28%;
+    color: rgb(46, 2, 46);
+    text-decoration: underline;
+    letter-spacing: 1px;
+}
+
+
+input {
+    width: 250px;
+    height: 35px;
+    margin: 15px 10px 10px 10px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    padding: 0px 35px 0px 12px;
+    background-color: rgba(27, 26, 26, 0.623);
+    color: white;
+    font-size: 18px;
+}
+
+button {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    background-color: rgba(14, 13, 13, 0);
+    color: white;
+    cursor: pointer;
+    position: relative;
+    right: 55px;
+}
+
+
+#location {
+    height: 90px;
+    width: 500px;
+    /* border: 1px solid red; */
+    /* background-color: rgba(43, 5, 43, 0.493); */
+    border-radius: 5px;
+    margin-left: 13px;
+    padding: 5px 0px 5px 10px;
+    line-height: 26px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+    color: white;
+}
+
+#location span {
+    font-weight: 300;
+}
+
+#location::after {
+    content: "";
+    height: 8px;
+    width: 500px;
+    background-color: rgba(0, 0, 0, 0.849);
+    position: absolute;
+    top: 180px;
+    border-radius: 100%;
+}
+
+
+
+
+#tempInfo {
+    /* border: 1px solid red; */
+    width: 80%;
+    height: 94px;
+    position: relative;
+    left: 25px;
+    top: 50px;
+    padding: 5px;
+    display: flex;
+    background-color: rgba(128, 128, 128, 0.603);
+    border-radius: 10px;
+    justify-content: space-around;
+}
+
+
+.tempLogo {
+    width: 80px;
+    height: 90%;
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 5px;
+    left: 20px;
+    background-color: rgba(58, 56, 56, 0.548);
+    border-radius: 100%;
+    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.205);
+
+}
+
+#tempLogo #logo {
+    width: 100%;
+    height: 100%;
+}
+
+
+#condition {
+    /* background-color: red; */
+    /* width: 70px; */
+    color: white;
+    letter-spacing: 1px;
+    position: absolute;
+    left: 99px;
+    top: 65px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#temp {
+    color: white;
+    text-decoration: none;
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-left: 180px;
+}
+
+#temp sup {
+    font-size: 20px;
+    font-weight: 300;
+    position: relative;
+    bottom: 5px;
+}
+
+#content {
+    width: 90%;
+    height: 75px;
+    /* border: 1px solid red; */
+    position: absolute;
+    bottom: 20px;
+    left: 23px;
+    border-radius: 15px;
+    background-color: rgba(168, 167, 167, 0.699);
+    display: flex;
+    justify-content: space-around;
+
+}
+
+#content div {
+    margin-top: 4px;
+    height: 90%;
+    width: 20%;
+    /* border: 1px solid black; */
+    border-radius: 5px;
+    text-align: center;
+    background-color: rgba(43, 5, 43, 0.616);
+}
+
+#content div h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+    letter-spacing: 1px;
+}
+
+
+#content div p {
+    color: whitesmoke;
+    margin-top: 10px;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
